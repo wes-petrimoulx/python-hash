@@ -3,8 +3,10 @@
 
 import hashlib
 
+salt = "4jyt3jxc4hf49l8liobza6kj9gtwa873"
+
 print("Please give and input to be hashed:")
-strInput = input()
+strInput = input() + salt
 
 hashOutput = hashlib.sha256(strInput.encode())
 
